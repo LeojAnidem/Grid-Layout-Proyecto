@@ -40,12 +40,176 @@
     ">
 
     <title>Grid Layout Proyecto</title>
-    <link rel="shorticon" href="./Assets/svg/logo-site.svg">
+    <link rel="shortcut icon" href="./Assets/svg/logo-site.svg" type="image/x-icon">
 
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duyplus/fontawesome-pro/css/all.css">
 </head>
 
 <body>
+    <header>
+        <section class="logo-box">
+            <img class="logo__img" src="./Assets/svg/logo-site.svg" alt="logo-site">
+        </section>
+
+        <fieldset class="page-index">
+            
+            <input type="radio" id="homeInput" name="page-index" value="HOME" checked>
+            <a class="page-index__path" href="#HOME">
+                <label for="homeInput">HOME</label>
+            </a>
+
+            <input type="radio" id="videosInput" name="page-index" value="VIDEOS">
+            <a class="page-index__path" href="#VIDEOS">
+                <label for="videosInput">VIDEOS</label>
+            </a>
+            
+            <input type="radio" id="sypnosisInput" name="page-index" value="SYPNOSIS">
+            <a class="page-index__path" href="#SYPNOSIS">
+                <label for="sypnosisInput">SYPNOSIS</label>
+            </a>
+            
+            <input type="radio" id="castInput" name="page-index" value="CAST">
+            <a class="page-index__path" href="#CAST">
+                <label for="castInput">CAST</label>
+            </a>
+        </fieldset>
+
+        <section class="btn-watch-box">
+            <a href="https://www.disneyplus.com/es-419/series/amphibia/4jsQ0zDkUTeN">
+                <div class="btn-watch">
+                    <span class="btn-watch__content">Watch Now</span>
+                </div>
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <section id="HOME" class="home-bg">
+            <div class="home__main-logo">
+            </div>
+        </section>
+
+        <section id="VIDEOS" class="videos-bg">
+            <div class="videos__main-left">
+                <div class="videos__img--big"></div>
+
+                <div class="videos__btn-play">
+                    <i class="icon fas fa-arrown-right"></i>
+                </div>
+            </div>
+
+            <div class="videos__main-right">
+                <div class="videos__title">
+                    <span id="videoNumber" class="videos__title__text">01</span>
+                    <span id="videoTitle" class="videos__title__text">Final Ending</span>
+                </div>
+
+                <div class="videos__img--small"></div>
+
+                <button id="videoChange" class="videos__btn">
+                    <i class="icon fas fa-angle-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="SYPNOSIS" class="sypnosis-bg">
+            <div class="sypnosis__story-box">
+                <h1 class="sypnosis__title">STORY</h1>
+
+                <p class="sypnosis__text-content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam 
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse 
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi.
+                    
+                    fquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit 
+                    in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit 
+                    praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy 
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
+                    enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                    nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer 
+                    adipiscing elit, sed diam nonummy ibh euismod quam erat volutpat.
+                </p>
+
+                <!-- Scroll Text HERE! -->
+            </div>
+        </section>
+
+        <section id="CAST" class="cast-bg">
+            <div class="cast__main-left">
+                <h6 id="castNumber" class="cast__number-id">01</h6>
+                <h1 id="castTitle" class="cast__title">Anne Boonchuy</h1>
+                <p id="castContent" class="cast__content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim 
+                    ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
+                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit 
+                    in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent 
+                    luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                    fquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in 
+                    vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent 
+                    luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum 
+                    dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim 
+                    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
+                    ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                    sed diam nonummy ibh euismod quam erat volutpat.
+                </p>
+
+                <fieldset class="cast__index">
+                    <input type="radio" id="castIndex-1" class="cast__icon-indicator" name="cast-index" value="1" checked>
+                    <input type="radio" id="castIndex-2" class="cast__icon-indicator" name="cast-index" value="2">
+                    <input type="radio" id="castIndex-3" class="cast__icon-indicator" name="cast-index" value="3">
+                </fieldset>
+            </div>
+
+            <div class="cast__main-right">
+                <div id="castCharacter" class="cast__character"></div>
+            </div>
+        </section>
+    </main>
     
+    <footer>
+        <i class="icon icon-music fas fa-headphones-alt"></i>
+
+        <section class="privacy-box">
+            <span class="privacy__text">Privacy police</span> 
+        </section>
+
+        <section class="info-box">
+            <i class="icon fas fa-dot"></i>
+
+            <span class="info__text">AMPHIBIA and all related character and elements © & ™Disney Chanel.</span>
+
+            <div class="social-media">
+                <a class="icon__link" href="https://twitter.com/leoj_anidem">
+                    <i class="icon fab fa-twitter"></i>
+                </a>
+
+                <a class="icon__link" href="https://codepen.io/leoj-anidem/pens/public">
+                    <i class="icon fab fa-codepen"></i>
+                </a>
+
+                <a class="icon__link" href="https://www.facebook.com/jmedinapaz">
+                    <i class="icon fab fa-facebook-f"></i>
+                </a>
+
+                <a class="icon__link" href="https://github.com/LeojAnidem">
+                    <i class="icon fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
