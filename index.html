@@ -43,7 +43,12 @@
     <link rel="shortcut icon" href="./Assets/svg/logo-site.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="./styles/styles.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duyplus/fontawesome-pro/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -52,42 +57,40 @@
             <img class="logo__img" src="./Assets/svg/logo-site.svg" alt="logo-site">
         </section>
 
-        <fieldset class="page-index">
+        <ul class="page-index">
             
-            <input type="radio" id="homeInput" name="page-index" value="HOME" checked>
-            <a class="page-index__path" href="#HOME">
-                <label for="homeInput">HOME</label>
-            </a>
+            <li id="homePath" class="page-index__path page-index__path--active">
+                <a href="#HOME">
+                    HOME
+                </a>
+            </li>
 
-            <input type="radio" id="videosInput" name="page-index" value="VIDEOS">
-            <a class="page-index__path" href="#VIDEOS">
-                <label for="videosInput">VIDEOS</label>
-            </a>
-            
-            <input type="radio" id="sypnosisInput" name="page-index" value="SYPNOSIS">
-            <a class="page-index__path" href="#SYPNOSIS">
-                <label for="sypnosisInput">SYPNOSIS</label>
-            </a>
-            
-            <input type="radio" id="castInput" name="page-index" value="CAST">
-            <a class="page-index__path" href="#CAST">
-                <label for="castInput">CAST</label>
-            </a>
-        </fieldset>
+            <li id="videosPath" class="page-index__path">    
+                <a href="#VIDEOS">
+                    VIDEOS
+                </a>
+            </li>
 
-        <section class="btn-watch-box">
-            <a href="https://www.disneyplus.com/es-419/series/amphibia/4jsQ0zDkUTeN">
-                <div class="btn-watch">
-                    <span class="btn-watch__content">Watch Now</span>
-                </div>
-            </a>
-        </section>
+            <li id="sypnosisPath" class="page-index__path">
+                <a href="#SYPNOSIS">
+                    SYPNOSIS
+                </a>
+            </li>
+            
+            <li id="castPath" class="page-index__path">
+                <a href="#CAST">
+                    CAST
+                </a>
+            </li>
+        </ul>
+
+        <a class="btn-watch-box" href="https://www.disneyplus.com/es-419/series/amphibia/4jsQ0zDkUTeN">
+            Watch Now
+        </a>
     </header>
 
     <main>
-        <section id="HOME" class="home-bg">
-            <div class="home__main-logo">
-            </div>
+        <section id="HOME" class="home-bg active">
         </section>
 
         <section id="VIDEOS" class="videos-bg">
@@ -137,8 +140,6 @@
                     nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer 
                     adipiscing elit, sed diam nonummy ibh euismod quam erat volutpat.
                 </p>
-
-                <!-- Scroll Text HERE! -->
             </div>
         </section>
 
@@ -180,36 +181,38 @@
     </main>
     
     <footer>
-        <i class="icon icon-music fas fa-headphones-alt"></i>
+        <i class="icon icon--cyan fas fa-headphones-alt"></i>
 
         <section class="privacy-box">
             <span class="privacy__text">Privacy police</span> 
         </section>
 
         <section class="info-box">
-            <i class="icon fas fa-dot"></i>
+            <i class="icon icon--cyan fas fa-ellipsis-v"></i>
 
             <span class="info__text">AMPHIBIA and all related character and elements © & ™Disney Chanel.</span>
 
             <div class="social-media">
-                <a class="icon__link" href="https://twitter.com/leoj_anidem">
+                <a class="icon--link" href="https://twitter.com/leoj_anidem">
                     <i class="icon fab fa-twitter"></i>
                 </a>
 
-                <a class="icon__link" href="https://codepen.io/leoj-anidem/pens/public">
+                <a class="icon--link" href="https://codepen.io/leoj-anidem/pens/public">
                     <i class="icon fab fa-codepen"></i>
                 </a>
 
-                <a class="icon__link" href="https://www.facebook.com/jmedinapaz">
+                <a class="icon--link" href="https://www.facebook.com/jmedinapaz">
                     <i class="icon fab fa-facebook-f"></i>
                 </a>
-
-                <a class="icon__link" href="https://github.com/LeojAnidem">
+  
+                <a class="icon--link" href="https://github.com/LeojAnidem">
                     <i class="icon fab fa-github"></i>
                 </a>
             </div>
         </section>
     </footer>
+    
+    <script src="app.js" type="module"></script>
 </body>
 
 </html>

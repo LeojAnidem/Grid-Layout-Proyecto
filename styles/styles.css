@@ -1,0 +1,111 @@
+@import url(../styles/components/header.css);
+@import url(./components/footer.css);
+
+:root{
+    --white: #F0EDEE;
+    --black: #0A090C;
+    --cyan: #90DDF0;
+
+    --grid-column: 10% 43.333% 46.666%;
+    --grid-row: 15.625% 81.25% 3.125%;
+
+    --font-sm: 20rem;
+    --font-md: 36rem;
+    --font-lg: 90rem;
+
+    --bg: url(../Assets/img/desk-home-fondo.jpg);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    appearance: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 6.25%;
+}
+
+body{
+    overflow: hidden;
+
+    display: grid;
+    /* .15fr .45fr 1.9fr 2.1fr .15fr */
+    grid-template-columns: 3.125% 9.375% 40.625% 43.75% 3.125%;
+    grid-template-rows:5.555% 13.888% 72.222% 2.777% 5.555%;
+
+    grid-template-areas: 
+        '. . . . .'
+        '. header header header .'
+        '. . main main .'
+        '. footer footer footer .'
+        '. . . . .'
+    ;
+
+    background-image: var(--bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+header, footer{
+    display: grid;
+    grid-template-columns: 10% 43.333% 46.666%;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: .93fr 1fr;
+    place-items: center;
+}
+
+main section{
+    display: none;
+}
+
+footer{
+    grid-area: footer;
+
+    font-size: var(--font-sm);
+    color: var(--white);
+}
+
+.no-display{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.home-bg{
+    grid-column: 1 / 2;
+
+    background-image: url(../Assets/img/desk-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100%;
+}
