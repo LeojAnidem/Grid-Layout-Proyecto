@@ -1,0 +1,25 @@
+.icon--cyan{
+    color: var(--cyan);
+}
+
+.icon--link{
+    color: var(--white);
+}
+
+.info-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__text{
+    font-size: 18rem;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+.icon--link:hover{
+    color: var(--cyan);
+}
