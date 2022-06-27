@@ -91,36 +91,59 @@
 
     <main>
         <section id="HOME" class="home-bg active">
+            <div class="main-left">
+                <img src="./Assets/img/desk-logo.png">
+            </div>
+            
         </section>
 
         <section id="VIDEOS" class="videos-bg">
-            <div class="videos__main-left">
-                <div class="videos__img--big"></div>
+            <div class="start main-left">
+                <img src="./Assets/img/desk-video-big.jpg" class="videos__img--big">
 
-                <div class="videos__btn-play">
-                    <i class="icon fas fa-arrown-right"></i>
-                </div>
+                <a href="#" class="videos__btn-play">
+                    <i class="icon icon--play fas fa-play"></i>
+                </a>
             </div>
 
-            <div class="videos__main-right">
+            <div class="end videos__selector main-right">
                 <div class="videos__title">
-                    <span id="videoNumber" class="videos__title__text">01</span>
-                    <span id="videoTitle" class="videos__title__text">Final Ending</span>
+                    <span id="videoNumber" class="videos__title__number">01</span>
+                    <span id="videoTitle">Final Ending</span>
                 </div>
 
-                <div class="videos__img--small"></div>
+                <img src="./Assets/img/desk-video-small.jpg" class="videos__img--small">
 
-                <button id="videoChange" class="videos__btn">
+                <a href="#" id="videoChange" class="videos__btn">
                     <i class="icon fas fa-angle-down"></i>
-                </button>
+                </a>
             </div>
         </section>
 
         <section id="SYPNOSIS" class="sypnosis-bg">
-            <div class="sypnosis__story-box">
-                <h1 class="sypnosis__title">STORY</h1>
+            <div class="content-box main-left">
+                <h1 class="title">STORY</h1>
 
-                <p class="sypnosis__text-content">
+                <p class="text-content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam 
+                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse 
+                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi.
+                    
+                    fquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit 
+                    in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit 
+                    praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy 
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
+                    enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis 
+                    nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer 
+                    adipiscing elit, sed diam nonummy ibh euismod quam erat volutpat.\
+                    
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam 
                     nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
                     volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -144,10 +167,10 @@
         </section>
 
         <section id="CAST" class="cast-bg">
-            <div class="cast__main-left">
-                <h6 id="castNumber" class="cast__number-id">01</h6>
-                <h1 id="castTitle" class="cast__title">Anne Boonchuy</h1>
-                <p id="castContent" class="cast__content">
+            <div class="content-box main-left">
+                <h2 id="castNumber" class="subtitle">01</h2>
+                <h1 id="castTitle" class="title">Anne Boonchuy</h1>
+                <p id="castContent" class="text-content">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                     euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim 
                     ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
@@ -174,8 +197,10 @@
                 </fieldset>
             </div>
 
-            <div class="cast__main-right">
-                <div id="castCharacter" class="cast__character"></div>
+            <div class="main-right">
+                <div id="castCharacter" class="cast__character">
+                    <img src="./Assets/img/Anne Boonchuy.png" alt="character">
+                </div>
             </div>
         </section>
     </main>
