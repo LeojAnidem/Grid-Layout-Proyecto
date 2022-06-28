@@ -7,7 +7,7 @@ const offActive = (classNameActive) => {
     active[0].className = active[0].className.replace(` ${notDot}`, '');
 } 
 
-const changeContent = (id) => {
+const changeSection = (id) => {
     let idName = id.replace('Path', '');
     cssVars.style.setProperty("--bg", `url(../Assets/img/desk-${idName}-fondo.jpg)`)
 
@@ -25,7 +25,7 @@ const pageIndex = () => {
         path.addEventListener('click' , function(){
             offActive('.page-index__path--active');
             this.className += ' page-index__path--active';
-            changeContent(this.id);
+            changeSection(this.id);
         });
     });
 }
