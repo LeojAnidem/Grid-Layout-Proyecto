@@ -1,5 +1,7 @@
-let mainChilds = document.querySelectorAll('main section');
-let cssVars = document.documentElement;
+let mainChilds = document.querySelectorAll('main section'),
+    cssVars = document.documentElement,
+    root = document.querySelector(':root')
+;
 
 const offActive = (classNameActive) => {
     let notDot = classNameActive.replace('.', '');
@@ -9,7 +11,8 @@ const offActive = (classNameActive) => {
 
 const changeSection = (id) => {
     let idName = id.replace('Path', '');
-    cssVars.style.setProperty("--bg", `url(../Assets/img/desk-${idName}-fondo.jpg)`)
+
+    (screen.width <= 400)? cssVars.style.setProperty("--bg", `url(../Assets/img/mb-${idName}-fondo.jpg)`) : cssVars.style.setProperty("--bg", `url(../Assets/img/desk-${idName}-fondo.jpg)`);
 
     offActive('.active');
     
@@ -20,6 +23,8 @@ const changeSection = (id) => {
 
 const pageIndex = () => {   
     let pagePaths = document.querySelectorAll('.page-index__path');
+
+    (screen.width <= 400)? cssVars.style.setProperty("--bg", `url(../Assets/img/mb-home-fondo.jpg)`) : cssVars.style.setProperty("--bg", `url(../Assets/img/desk-home-fondo.jpg)`);
 
     pagePaths.forEach(path => {
         path.addEventListener('click' , function(){

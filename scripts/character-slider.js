@@ -7,6 +7,12 @@ let charaId = _('#castNumber'),
     charaImg = _('#castCharacter')
 ;
 
+if (screen.width <= 400){
+    characters.forEach(character => {
+        character.name = character.name.split(' ')[0];
+    });
+}
+
 const createIndexBtn = () => {
     for(let i = 1; i <= characters.length; i++){
         createElement('#castIndex', 'input', 'radio', `castIndex-${i}`, 'cast-index', 'icon-indicator', `${i}`);
@@ -14,7 +20,9 @@ const createIndexBtn = () => {
         if(i === 1){
             _('#castIndex-1').setAttribute('checked', true);
             charaId.textContent = characters[0].id;
+            
             charaName.textContent = characters[0].name;
+
             charaDescription.textContent = characters[0].description;
             charaImg.src = characters[0].img;
         }

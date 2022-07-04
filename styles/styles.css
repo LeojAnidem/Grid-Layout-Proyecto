@@ -37,7 +37,6 @@ body{
     /* .15fr .45fr 1.9fr 2.1fr .15fr */
     grid-template-columns: 3.125% 9.375% 40.625% 43.75% 3.125%;
     grid-template-rows:5.555% 13.888% 72.222% 2.777% 5.555%;
-
     grid-template-areas: 
         '. . . . .'
         '. header header header .'
