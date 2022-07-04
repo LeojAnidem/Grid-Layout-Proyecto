@@ -20,7 +20,7 @@ let characters = [
         veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
         ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
         sed diam nonummy ibh euismod quam erat volutpat.`,
-        img: '../../Assets/img/Anne Boonchuy.png'
+        img: '././Assets/img/Anne Boonchuy.png'
     },
 
     {
@@ -44,7 +44,7 @@ let characters = [
         veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
         ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
         sed diam nonummy ibh euismod quam erat volutpat.`,
-        img: '../../Assets/img/Marcy Wu.png'
+        img: '././Assets/img/Marcy Wu.png'
     },
 
     {
@@ -68,7 +68,7 @@ let characters = [
         veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
         ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
         sed diam nonummy ibh euismod quam erat volutpat.`,
-        img: '../../Assets/img/Sasha Waybright.png'
+        img: '././Assets/img/Sasha Waybright.png'
     }
 ];
 
