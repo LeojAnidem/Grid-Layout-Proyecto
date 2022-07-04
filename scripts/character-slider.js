@@ -7,7 +7,7 @@ let charaId = _('#castNumber'),
     charaImg = _('#castCharacter')
 ;
 
-if (screen.width <= 400){
+if (screen.width <= 450){
     characters.forEach(character => {
         character.name = character.name.split(' ')[0];
     });

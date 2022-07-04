@@ -12,7 +12,7 @@ const offActive = (classNameActive) => {
 const changeSection = (id) => {
     let idName = id.replace('Path', '');
 
-    (screen.width <= 400)? cssVars.style.setProperty("--bg", `url(../Assets/img/mb-${idName}-fondo.jpg)`) : cssVars.style.setProperty("--bg", `url(../Assets/img/desk-${idName}-fondo.jpg)`);
+    (screen.width <= 450)? cssVars.style.setProperty("--bg", `url(../Assets/img/mb-${idName}-fondo.jpg)`) : cssVars.style.setProperty("--bg", `url(../Assets/img/desk-${idName}-fondo.jpg)`);
 
     offActive('.active');
     
@@ -24,7 +24,7 @@ const changeSection = (id) => {
 const pageIndex = () => {   
     let pagePaths = document.querySelectorAll('.page-index__path');
 
-    (screen.width <= 400)? cssVars.style.setProperty("--bg", `url(../Assets/img/mb-home-fondo.jpg)`) : cssVars.style.setProperty("--bg", `url(../Assets/img/desk-home-fondo.jpg)`);
+    (screen.width <= 450)? cssVars.style.setProperty("--bg", `url(../Assets/img/mb-home-fondo.jpg)`) : cssVars.style.setProperty("--bg", `url(../Assets/img/desk-home-fondo.jpg)`);
 
     pagePaths.forEach(path => {
         path.addEventListener('click' , function(){

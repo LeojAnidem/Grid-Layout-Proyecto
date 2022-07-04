@@ -1,4 +1,4 @@
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
     body{        
         grid-template-columns: 7.69% 84.615% 7.69%;
         grid-template-rows: 3.55% 12.44% auto 1.777% 3.55%;
